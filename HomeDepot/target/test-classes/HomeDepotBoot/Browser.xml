@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HomeDepot">
+
+<test name="HomeDepotChrome">
+
+<parameter name="url" value="https://www.homedepot.com/auth/view/createaccount?redirect=/"></parameter>
+
+<parameter name="browser" value="Chrome"></parameter>
+
+<classes>
+<class name="HomeDepotBoot.Register_Test"></class>
+</classes>
+</test>
+
+<test name="HomeDepotFireFox">
+
+<parameter name="url" value="https://www.homedepot.com/auth/view/createaccount?redirect=/"></parameter>
+
+<parameter name="browser" value="Firefox"></parameter>
+
+<classes>
+<class name="HomeDepotBoot.Register_Test"></class>
+</classes>
+</test>
+</suite>
+
+
+
+

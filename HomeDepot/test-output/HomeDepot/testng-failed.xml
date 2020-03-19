@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [HomeDepot]">
+  <test thread-count="5" name="HomeDepotChrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://www.homedepot.com/auth/view/createaccount?redirect=/"/>
+    <classes>
+      <class name="HomeDepotBoot.Register_Test">
+        <methods>
+          <include name="f"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- HomeDepotBoot.Register_Test -->
+    </classes>
+  </test> <!-- HomeDepotChrome(failed) -->
+  <test thread-count="5" name="HomeDepotFireFox(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="url" value="https://www.homedepot.com/auth/view/createaccount?redirect=/"/>
+    <classes>
+      <class name="HomeDepotBoot.Register_Test">
+        <methods>
+          <include name="f"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- HomeDepotBoot.Register_Test -->
+    </classes>
+  </test> <!-- HomeDepotFireFox(failed) -->
+</suite> <!-- Failed suite [HomeDepot] -->
